@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Lang.Lexer", "Z.Lang.Lexer\Z.Lang.Lexer.csproj", "{57B1B618-C4B2-4D86-96D0-B664EB5D2C60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E4949234-996C-41B5-819E-07DF78C50D4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Lang.Lexer.Tests", "Z.Lang.Lexer.Tests\Z.Lang.Lexer.Tests.csproj", "{6036AEE8-706E-4177-83D6-2E59506C44BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Lang.REPL", " Z.Lang.REPL\Z.Lang.REPL.csproj", "{8220C9CC-7972-4DD7-ADC5-CA65515C59EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57B1B618-C4B2-4D86-96D0-B664EB5D2C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57B1B618-C4B2-4D86-96D0-B664EB5D2C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57B1B618-C4B2-4D86-96D0-B664EB5D2C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57B1B618-C4B2-4D86-96D0-B664EB5D2C60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6036AEE8-706E-4177-83D6-2E59506C44BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6036AEE8-706E-4177-83D6-2E59506C44BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6036AEE8-706E-4177-83D6-2E59506C44BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6036AEE8-706E-4177-83D6-2E59506C44BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8220C9CC-7972-4DD7-ADC5-CA65515C59EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8220C9CC-7972-4DD7-ADC5-CA65515C59EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8220C9CC-7972-4DD7-ADC5-CA65515C59EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8220C9CC-7972-4DD7-ADC5-CA65515C59EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6036AEE8-706E-4177-83D6-2E59506C44BE} = {E4949234-996C-41B5-819E-07DF78C50D4B}
+	EndGlobalSection
+EndGlobal
