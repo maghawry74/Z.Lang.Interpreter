@@ -5,7 +5,7 @@ namespace Z.Lang.Parser.Types.Nodes.Expressions;
 
 public class NullExpression(Token token) : Expression(token)
 {
-    public object? Value { get; set; } = null;
+    private object? Value { get; set; } = null;
     public override string ToString() => $"{Token.Literal}";
     public override object? Evaluate(Environment? environment = null) => Value;
 }

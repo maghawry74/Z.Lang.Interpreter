@@ -6,7 +6,7 @@ namespace Z.Lang.Parser.Types.Nodes.Statements;
 
 public class BlockStatement(Token token, List<Statement> statements) : Statement(token)
 {
-    public List<Statement> Statements { get; set; } = statements;
+    private List<Statement> Statements { get; set; } = statements;
     public override string ToString() => string.Join("\n", Statements);
     public override object?Evaluate(Environment? environment = null)
     {

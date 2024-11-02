@@ -6,8 +6,8 @@ namespace Z.Lang.Parser.Types.Nodes.Expressions;
 
 public class CallExpression(Token token, List<Expression> arguments, Expression function) : Expression(token)
 {
-    public List<Expression> Arguments { get; set; } = arguments;
-    public Expression Function { get; set; } = function;
+    private List<Expression> Arguments { get; set; } = arguments;
+    private Expression Function { get; set; } = function;
     public override string ToString() => $"{Function}({string.Join(", ", Arguments)})";
 
     public override object? Evaluate(Environment? environment = null)

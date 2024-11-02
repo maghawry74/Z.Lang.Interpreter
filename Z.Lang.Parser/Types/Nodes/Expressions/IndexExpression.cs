@@ -9,8 +9,8 @@ namespace Z.Lang.Parser.Types.Nodes.Expressions;
 
 public class IndexExpression(Token token, Expression left, Expression index) : Expression(token)
 {
-    public Expression Left { get; set; } = left;
-    public Expression Index { get; set; } = index;
+    private Expression Left { get; set; } = left;
+    private Expression Index { get; set; } = index;
 
     public override object? Evaluate(Environment? environment = null)
     {

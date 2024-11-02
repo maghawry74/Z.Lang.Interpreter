@@ -6,8 +6,8 @@ namespace Z.Lang.Parser.Types.Nodes.Expressions;
 public class InfixExpression : Expression
 {
     private static readonly List<string> Operators = ["+", "-", "*", "/", ">", "<", ">=", "<=", "==", "!="];
-    public Expression Left { get; set; }
-    public string Operator { get; }
+    private Expression Left { get; set; }
+    private string Operator { get; }
     public Expression Right { get; set; }
 
     public InfixExpression(Token token, Expression left, string @operator, Expression right) : base(token)

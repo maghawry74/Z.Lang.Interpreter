@@ -13,8 +13,8 @@ public class PrefixExpression : Expression
     }
 
     private static readonly List<string> Operators = ["!", "-"];
-    public Expression Operand { get; set; }
-    public string Operator { get; set; }
+    private Expression Operand { get; set; }
+    private string Operator { get; set; }
     public override string ToString() => $"{Operator}{Operand}";
     public override object?Evaluate(Environment? environment = null)
     {

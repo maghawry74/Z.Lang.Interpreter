@@ -7,7 +7,7 @@ namespace Z.Lang.Parser.Types.Nodes.Expressions;
 
 public class ArrayExpression(Token token, List<Expression> elements) : Expression(token)
 {
-    public List<Expression> Elements { get; set; } = elements;
+    private List<Expression> Elements { get; set; } = elements;
 
     public override object Evaluate(Environment? environment = null)
     {

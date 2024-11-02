@@ -5,7 +5,7 @@ namespace Z.Lang.Parser.Types.Nodes.Expressions;
 
 public class NumberExpression(Token token, long value) : Expression(token)
 {
-    public long Value { get; set; } = value;
+    private long Value { get; set; } = value;
     public override string ToString() => $"{Value}";
     public override object Evaluate(Environment? environment = null) => Value;
 }
